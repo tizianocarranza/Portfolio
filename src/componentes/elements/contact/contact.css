@@ -1,0 +1,60 @@
+.contact {
+    --contact-width: 150px;
+    --contact-height: 30px;
+
+    position: fixed;
+    top: calc(90% - var(--contact-height));
+    left: calc(100% - var(--contact-width));
+    z-index: 110;
+    
+    height: var(--contact-height);
+    width: var(--contact-width);
+    background-color: none;
+    /* border: 1px solid var(--color-1); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    transition: color 300ms ease;
+}
+
+.contact__text {
+    font-size: 1.35rem;
+    font-weight: 300;
+    font-variant: small-caps;
+    font-style: italic;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--detail-color); */
+    transition: background-color 300ms ease;
+    animation: contact-underline-text 2000ms ease-in-out alternate infinite ;
+    background-color: black;
+}
+
+
+.contact:hover::before {
+    border: none;
+    animation: none;
+}
+
+@keyframes contact-underline-text {
+    from {
+        width: 20%;
+    }
+    to {
+        width: 100%;
+    }
+    
+}

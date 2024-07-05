@@ -1,0 +1,113 @@
+.intro {
+    height: 300vh;
+    width: 200vw;
+    animation: intro-show-story linear both;
+    animation-timeline: view();
+    animation-range: 200vh 300vh;
+  }
+
+  .intro__text {
+    height: 100vh;
+    width: 200vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 100vw);
+    grid-template-rows: repeat(2, 50vh);
+
+    background-color: var(--detail-color);
+    
+    
+    text-align: left;
+    
+    animation: intro-enhance-bg linear both;
+    animation-timeline: view();
+    animation-range: 100vh 180vh;
+  }
+
+  .intro__text > * {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  
+  .intro__text> .intro__title {
+    grid-row: 2;
+    grid-column: 1;
+    transform: translateY(8%); 
+
+    font-size: 30rem;
+    font-weight: 600;
+    font-family: var(--font-family-header);
+    letter-spacing: -2px;
+    
+    align-self: flex-end;
+  }
+  
+
+  
+  @keyframes intro-show-story {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100vw);
+    }
+  }
+   
+  @keyframes intro-enhance-bg {
+    0% {
+      background: var(--detail-color);
+      color: var(--color-2);
+    }
+/*     40% {
+      filter: blur(20px);
+    }
+    60% {
+      filter: blur(20px);
+    } */
+    100% {
+      background-color: var(--color-2);
+      color: var(--detail-color);
+    }
+  }
+
+  
+  
+  @media (width < 1000px) {
+    .intro__text {
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .intro__text> .intro__title {
+      --header-height: 10rem;
+      transform: none;
+      font-size: var(--header-height);
+    }
+    .intro__text> .intro__info {
+      font-size: 6rem;
+    }
+    
+  }
+
+  @media (width < 700px) {
+    .intro__text {
+      align-items: center;
+      justify-content: center;
+    }
+    .intro__text> .intro__title {
+      --header-height: 7rem;
+      transform: translateY(-20%) rotate(90deg);
+      font-size: var(--header-height);
+    }
+    .intro__text> .intro__info {
+      transform: translate(0) rotate(90deg);
+      font-size: 5rem;
+      line-height: 11rem;
+    }
+    
+  }
