@@ -39,7 +39,7 @@ function Footer() {
 
 
         <div className="footer__disclaimer">
-          <p>©2024 Emperia. All Rights Reserved.</p>
+          <p>©2024 Tiziano. All Rights Reserved.</p>
         </div>
       </div>
     </section>

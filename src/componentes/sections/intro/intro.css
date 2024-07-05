@@ -17,7 +17,7 @@
     grid-template-columns: repeat(2, 100vw);
     grid-template-rows: repeat(2, 50vh);
 
-    background-color: var(--detail-color);
+    background-color: var(--color-1);
     
     
     text-align: left;
@@ -60,7 +60,7 @@
    
   @keyframes intro-enhance-bg {
     0% {
-      background: var(--detail-color);
+      background: var(--color-1);
       color: var(--color-2);
     }
 /*     40% {
@@ -71,7 +71,7 @@
     } */
     100% {
       background-color: var(--color-2);
-      color: var(--detail-color);
+      color: var(--color-1);
     }
   }
 

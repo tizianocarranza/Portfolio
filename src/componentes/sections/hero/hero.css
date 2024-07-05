@@ -86,7 +86,7 @@
 
 .hero__text p:nth-child(3) {
   transform: translateY(0);
-  color: var(--detail-color);
+  color: var(--color-1);
   background-color: var(--color-2);
   z-index: 3;
 }
@@ -102,7 +102,7 @@
 
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  background: var(--detail-color);
+  background: var(--color-1);
 
   transition: border-radius 400ms ease-in, width 400ms ease-in, height 400ms ease-in;
 }

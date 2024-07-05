@@ -27,7 +27,6 @@
 }
 
 .projects iframe, .projects img {
-    border: 1px solid blue;
     overflow: hidden;
     background-color: var(--color-2);
 }

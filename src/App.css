@@ -21,6 +21,7 @@ body, html {
   overflow-y: scroll;
   overflow-x: hidden;
   /*   scroll-behavior: smooth; */
+  color: var(--color-2);
 }
 
 
@@ -57,13 +58,12 @@ section {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: var(--detail-color);
-  color: black;
+  background-color: var(--color-1);
 }
 
 .gradient-text
 {
-  color: var(--detail-color);
+  color: var(--color-1);
 /*   background: var(--gradient);
 
   -webkit-background-clip: text;
