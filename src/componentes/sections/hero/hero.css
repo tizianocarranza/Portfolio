@@ -1,8 +1,8 @@
 .hero-container {
   position: relative;
   display: flex;
-  background-color: transparent;
   height: 400vh;
+  background-color: var(--color-2);
 
   transition: background-color 300ms ease-in;
   animation: hero-solid-background linear both;
@@ -92,7 +92,6 @@
 }
 
 .hero__bg {
-  position: sticky;
   top: 0;
   left: 0;
   transform: translate(calc(50vw - 50%), calc(49.9vh - 50%));
@@ -129,11 +128,3 @@
   width: 100%;
 }
 
-@keyframes hero-solid-background {
-  from {
-    background-color: transparent;
-  }
-  to {
-    background-color: var(--color-2);
-  }
-}
