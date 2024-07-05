@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
 import './App.css'
-import useIntersection from './logic/useIntersection'
 
 import { Intro, Hero, Projects, Technologies } from "./componentes/sections/index"
 import { Navbar, Footer, Contact } from "./componentes/elements/index"
@@ -9,13 +8,13 @@ function App() {
   const cursorDotRef = useRef(null);
   const cursorOutlineRef = useRef(null);
 
-  const [isScrolling, setIsScrolling ] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  
+
   const moveCursor = (event) => {
     const posX = event.clientX;
     const posY = event.clientY;
-    
+
     cursorDotRef.current.style.left = `${posX}px`;
     cursorDotRef.current.style.top = `${posY}px`;
 
@@ -53,20 +52,20 @@ function App() {
     }
   }, [isScrolling]);
 
-
   return (
-    <div className="app" onMouseMove={moveCursor} onScroll={handleScroll}>
-      <div className="cursor-dot" ref={cursorDotRef}></div>
-      <div className="cursor-outline" ref={cursorOutlineRef}></div>
+      <div className="app" onMouseMove={moveCursor} onScroll={handleScroll}>
+        <div className="cursor-dot" ref={cursorDotRef}></div>
+        <div className="cursor-outline" ref={cursorOutlineRef}></div>
         <Contact />
         <Intro />
         <Hero />
         <Projects />
         <Technologies />
         <Footer />
-      <section className="cta"></section>
-    </div>
-  )
+        <section className="cta"></section>
+      </div>
+      )
+
 }
 
 export default App

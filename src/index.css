@@ -7,8 +7,8 @@
     --font-family: "Poppins", sans-serif;
     --gradient: linear-gradient(70deg, rgba(194,29,141,1) 0%, rgba(255,82,30,1) 100%);
     --color-1: #fdfcfc;
-    --color-2: rgb(20, 20, 19) /* 141413 */;
-    --detail-color: rgb(250, 128, 114) /* #FA8072 */;
+    --color-2: #232323 /* rgb(20, 20, 19) */ /* 141413 */;
+    --detail-color: #E5E4E2 /* rgb(250, 128, 114) */ /* #FA8072 */;
     --font-family-header: 'Hurin Personal Use Only Regular'
 }
 
