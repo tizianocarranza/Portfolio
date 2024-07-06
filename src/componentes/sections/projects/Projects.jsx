@@ -6,14 +6,18 @@ import htmlLogo from "../../../assets/htmlLogo.svg"
 
 function Projects() {
   return (
-    <section className="projects__container">
+
+    <section className="projects-section">
+      <div className="projects__container">
         <div className="title regular-text">My projects</div>
         <div className="projects">
-          <img src={javascriptLogo}/>
-          <img src={htmlLogo}/>
-          <img src={cssLogo}/>
+          <img src={javascriptLogo} />
+          <img src={htmlLogo} />
+          <img src={cssLogo} />
         </div>
+      </div>
     </section>
+
 
   )
 }

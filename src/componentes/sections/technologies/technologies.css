@@ -1,29 +1,26 @@
 .technologies {
     position: relative;
-    height: 300vh;
+    height: 200vh;
     width: 100vw;
+
+    align-items: flex-start;
 }
 
-.technologies-sticky-container {
+.technologies .technologies__content {
+    position: relative;
+    background-color: var(--color-1);
+}
+
+
+.technologies__sticky-container {
     position: sticky;
-    top: 0;
+    top: 2%;
     left: 0;
-    height: 100vh;
-    width: 100vw;
-
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    
 }
 
-.technologies-title{
-    color: white;
-}
-
-
-.technologies-container {
+.technologies__container {
     position: relative;
     height: 50%;
     width: 50%;
@@ -47,7 +44,7 @@
     perspective: 100px;
 }
 
-.technologies-container img {
+.technologies__container img {
     height: 90%;
     width: 90%;
     padding: 5%;
@@ -56,41 +53,42 @@
     transform: translateZ(-20px);
 }
 
-.technologies-container img:nth-child(1):hover, .technologies-container img:nth-child(3):hover {
+.technologies__container img:nth-child(1):hover, .technologies__container img:nth-child(3):hover {
     transform: translateZ(-10px) rotate( 10deg);
 }
 
-.technologies-container img:nth-child(2):hover, .technologies-container img:nth-child(4):hover {
+.technologies__container img:nth-child(2):hover, .technologies__container img:nth-child(4):hover {
     transform: translateZ(-10px) rotate(-10deg);
 }
 
 
-.technologies-background:nth-child(1) {
+.technologies__background:nth-child(1) {
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
-    height: 50vh;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
     background-color: var(--color-2);
 
     animation: technologies-enhance-technologies-background-1 linear both;
     animation-timeline: view();
-    animation-range: 0vh 50vh;
+    animation-range: 25vh 75vh;
 }
-.technologies-background:nth-child(2)
+.technologies__background:nth-child(2)
 {
     position: absolute;
     z-index: -1;
     top: 50%;
     left: 0;
-    height: 50vh;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
     background-color: var(--color-2);
 
     animation: technologies-enhance-technologies-background-2 linear both;
     animation-timeline: view();
-    animation-range: 0vh 50vh;
+    animation-range: 25vh 75vh;
 }
 
 
@@ -132,17 +130,17 @@
 
 @keyframes technologies-enhance-technologies-background-1 {
     from {
-        transform: scaleY(1) scaleX(0) ;
+        transform: scaleX(0);
     }
     to {
-        transform: scaleY(1) scaleX(1) rotate(0);
+        transform: scaleX(1);
     }
 } 
 @keyframes technologies-enhance-technologies-background-2 {
     from {
-        transform: scaleY(1) scaleX(1) rotate(0);
+        transform: scaleX(1);
     }
     to {
-        transform: scaleY(1) scaleX(0);
+        transform: scaleX(0);
     }
 } 

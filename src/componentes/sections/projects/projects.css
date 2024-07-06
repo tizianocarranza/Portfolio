@@ -1,8 +1,19 @@
+.projects-section {
+    position: relative;
+    width: 100vw;
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: center;
+}
 
 .projects__container {
     position: relative;
+    background-color: var(--color-2);
     top: 0;
     left: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 95%;
 }
 
 
@@ -10,7 +21,7 @@
     position: sticky;
     top: 0vh;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 300vh;
 
     animation: proyects-appear-from-right linear both;
@@ -23,13 +34,14 @@
     position: sticky;
     top: 30vh;
     left: 0;
+    border-radius: 10px;
     width: 100%;
     height: 70vh;
 }
 
 .projects iframe, .projects img {
     overflow: hidden;
-    background-color: var(--color-2);
+    background-color: gray;
 }
 
 .projects iframe::-webkit-scrollbar {
@@ -37,11 +49,13 @@
 }
 
 .title {
-    height: 30vh;
+    height: 25vh;
     position: sticky;
-    top: 0;
+    top: 5%;
     left: 0;
 
+    border-radius: 10px;
+    background-color: var(--color-1);
     animation: proyects-appear-from-left linear both;
     animation-timeline: view();
     animation-range: 0 30vh;

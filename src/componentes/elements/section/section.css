@@ -1,0 +1,15 @@
+.section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__content {
+    height: 97%;
+    width: 98%;
+    border-radius: 10px;
+    background-color: var(--color-2);
+    color: var(--color-1);
+}

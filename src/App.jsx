@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react'
 import './App.css'
 
+import { Navbar, Footer, Contact, Section } from "./componentes/elements/index"
 import { Intro, Hero, Projects, Technologies } from "./componentes/sections/index"
-import { Navbar, Footer, Contact } from "./componentes/elements/index"
 
 function App() {
   const cursorDotRef = useRef(null);

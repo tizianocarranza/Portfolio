@@ -10,11 +10,11 @@
     align-items: center;
 }
 
-.footer__content {
+.footer .footer__content {
     background-color: var(--color-2);
     box-sizing: border-box;
-    width: 98%;
-    height: 97%;
+    width: 99%;
+    height: 95%;
     padding: 2%;
     border-radius: 10px;
     display: flex;
