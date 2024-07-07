@@ -1,9 +1,9 @@
 .intro {
     height: 300vh;
     width: 200vw;
-    animation: intro-show-story linear both;
+    animation: intro-move-right linear both;
     animation-timeline: view();
-    animation-range: 200vh 300vh;
+    animation-range: 200vh 290vh;
   }
 
   .intro__text {
@@ -49,7 +49,7 @@
   
 
   
-  @keyframes intro-show-story {
+  @keyframes intro-move-right {
     from {
       transform: translateX(0);
     }

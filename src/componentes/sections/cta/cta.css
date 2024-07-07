@@ -1,0 +1,40 @@
+.cta {
+    height: 70vh;
+}
+
+.cta__content {
+    background-color: var(--color-1);
+    color: var(--color-2);
+
+    font-style: italic;
+    width: 90%;
+}
+
+.cta__text mark {
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border-radius: 3px;
+    padding: 0 15px;
+}
+
+.cta__text input {
+    height: 6rem;
+    width: 95%;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--color-2);
+
+    outline: none;
+    font-style: italic;
+    color: var(--color-2);
+
+    font-family: var(--font-family);
+    font-weight: 300;
+}
+
+.cta__text input::placeholder {
+/*     font-size: 5rem;
+    color: var(--color-2);
+    opacity: 0.5; */
+}

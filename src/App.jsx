@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import './App.css'
 
 import { Navbar, Footer, Contact, Section } from "./componentes/elements/index"
-import { Intro, Hero, Projects, Technologies } from "./componentes/sections/index"
+import { Intro, Hero, Projects, Technologies, Cta } from "./componentes/sections/index"
 
 function App() {
   const cursorDotRef = useRef(null);
@@ -59,10 +59,10 @@ function App() {
         <Contact />
         <Intro />
         <Hero />
-        <Projects />
+        <Projects /> {/* To do */}
         <Technologies />
+        <Cta />
         <Footer />
-        <section className="cta"></section>
       </div>
       )
 

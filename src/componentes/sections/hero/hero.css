@@ -3,11 +3,22 @@
   display: flex;
   height: 400vh;
   background-color: var(--color-2);
+}
 
-  transition: background-color 300ms ease-in;
-  animation: hero-solid-background linear both;
+.hero-container::after {
+  position: absolute;
+  content: "";
+  top: 90%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  background-color: var(--color-1);
+
+  animation: hero-change-background linear both;
   animation-timeline: view();
-  animation-range: 250vh 260vh;
+  animation-range: 0 30%;
+
 }
 
 
@@ -128,3 +139,12 @@
   width: 100%;
 }
 
+
+@keyframes hero-change-background {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

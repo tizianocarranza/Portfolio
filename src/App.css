@@ -11,6 +11,11 @@ body, html {
   cursor: none;
 }
 
+::selection
+{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 .app {
 
@@ -21,6 +26,7 @@ body, html {
   overflow-y: scroll;
   overflow-x: hidden;
   /*   scroll-behavior: smooth; */
+  background-color: var(--color-1);
   color: var(--color-2);
 }
 

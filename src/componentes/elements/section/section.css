@@ -1,4 +1,5 @@
 .section {
+    margin: 40vh 0;
     height: 100vh;
     width: 100vw;
     display: flex;
